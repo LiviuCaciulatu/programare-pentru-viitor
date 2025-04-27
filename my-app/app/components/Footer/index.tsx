@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={style.footerCenter}>
         <div className={style.footerCenterLeft}>
           <div className={style.footerCenterLeftTitle}>
-            Say hello to our friendly team at:
+          Contact:
           </div>
           <div className={style.footerCenterLeftContent}>
             <div className={style.iconWithText}>
@@ -24,7 +24,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className={style.link}
               >
-                Str. Ramnicu Valcea, nr.8, etaj 6, ap. 610, sector 3, București
+                103-105 Calea Victoriei, District 1, Bucharest
               </a>
             </div>
             <div className={style.iconWithText}>
@@ -33,8 +33,8 @@ const Footer = () => {
                 alt="Mail Icon"
                 className={style.icon}
               />
-              <a href="mailto:contact@programare-pentru-viitor.ro" className={style.link}>
-              contact@programare-pentru-viitor.ro
+              <a href="mailto:salut@programare-pentru-viitor.ro" className={style.link}>
+              salut@programare-pentru-viitor.ro
               </a>
             </div>
             <div className={style.iconWithText}>
@@ -84,7 +84,7 @@ const Footer = () => {
                 className={style.link}
               >
                 <img
-                  src="/assets/svg/Footer/linkedIn.svg"
+                  src="/assets/svg/Footer/linkedin.svg"
                   alt="LinkedIn Icon"
                   className={style.icon}
                 />

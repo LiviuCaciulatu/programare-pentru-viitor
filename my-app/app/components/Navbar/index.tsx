@@ -47,24 +47,22 @@ const Navbar = () => {
           }`}
         >
           <li className={style.dropItem}>
-            <Link
-              href="/AboutUs"
-              className={`${style.navLink} ${
-                pathname === "/AboutUs" ? style.active : ""
-              }`}
+            <a
+              href="https://formular230.ro/programare-pentru-viitor"
+              target="_self"
+              className={style.navLink}
             >
               Despre noi
-            </Link>
+            </a>
           </li>
           <li className={style.dropItem}>
-            <Link
-              href="/Support"
-              className={`${style.navLink} ${
-                pathname === "/Support" ? style.active : ""
-              }`}
+            <a
+              href="https://formular230.ro/programare-pentru-viitor"
+              target="_self"
+              className={style.navLink}
             >
               Sustine-ne
-            </Link>
+            </a>
           </li>
 
           {mobileMenuOpen && (
@@ -84,7 +82,7 @@ const Navbar = () => {
         <li className={`${style.dropItem} ${style.desktopContactItem}`}>
           <Link
             href="/Contact"
-            className={`${style.navLink} ${
+            className={`${style.navLink} ${style.ContactItem} ${
               pathname === "/Contact" ? style.activeBtn : ""
             }`}
           >

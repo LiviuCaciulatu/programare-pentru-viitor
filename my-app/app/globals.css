@@ -2,3 +2,6 @@
 
 @tailwind utilities;
 
+html{
+    background-color: white;
+}

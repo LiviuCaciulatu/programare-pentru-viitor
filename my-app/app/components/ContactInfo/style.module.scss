@@ -1,0 +1,61 @@
+@use '../../style/globalVariables' as *;
+
+.hero{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background-color: $BlueDark;
+    margin-top: 5vh;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100%;
+        background-image: url("/assets/svg/dots.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: bottom center;
+        background-size: contain;
+        opacity: 1;
+        z-index: 0;
+
+        @media (max-width: 768px) {
+            height: 20%;
+        }
+      }
+}
+
+.title{
+    color:white;
+    font-size: 2rem;
+    font-family: $PoppinsBold;
+    padding-top: 8rem;
+    word-spacing: 2rem;
+    z-index: 1;
+}
+
+.description{
+    color: white;
+    font-size: 1.5rem;
+    font-family: $PoppinsLight;
+    padding-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
